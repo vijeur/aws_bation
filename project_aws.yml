@@ -1,0 +1,12 @@
+---
+
+- hosts: local
+  roles:
+    - aws_bation
+
+- name: setup ssh key and bastion
+  remote_user: ubuntu
+  sudo: yes
+  hosts: bastion_servers
+  roles:
+    - bastion
