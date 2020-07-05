@@ -10,4 +10,4 @@ to make vpc into the aws
 
 how to run playbook project_aws.yml
 
-`ansible-playbook project.yml -
+`ansible-playbook project.yml -i inventory -e var.yml
